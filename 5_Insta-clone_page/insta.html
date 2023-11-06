@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Instagram Clone</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+
+        <div class="profile">
+
+          <div class="profile-image">
+
+            <img src="data:image/jpeg;base64,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" alt="">
+
+          </div>
+
+          <div class="profile-user-settings">
+
+            <h1 class="profile-user-name">_mo_hana_2808</h1>
+
+            <button class="btn profile-edit-btn">Edit Profile</button>
+
+            <button class="btn profile-settings-btn" aria-label="profile settings"><i class="fas fa-cog" aria-hidden="true"></i></button>
+
+          </div>
+
+          <div class="profile-stats">
+
+            <ul>
+              <li><span class="profile-stat-count">100</span> posts</li>
+              <li><span class="profile-stat-count">456</span> followers</li>
+              <li><span class="profile-stat-count">147</span> following</li>
+            </ul>
+
+          </div>
+
+          <div class="profile-bio">
+
+            <p><span class="profile-real-name">If it's yours,"It will come back"....If doesn't, Leave it !! 📷✈️🏕️</p>
+
+          </div>
+
+        </div>
+        <!-- End of profile section -->
+
+      </div>
+      <!-- End of container -->
+
+    </header>
+
+    <main>
+
+      <div class="container">
+
+        <div class="gallery">
+
+          <div class="gallery-item" tabindex="0">
+
+            <img src="https://images.unsplash.com/photo-1511765224389-37f0e77cf0eb?w=500&h=500&fit=crop" class="gallery-image" alt="">
+
+            <div class="gallery-item-info">
+
+              <ul>
+                <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 56</li>
+                <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 2</li>
+              </ul>
+
+            </div>
+
+          </div>
+
+          <div class="gallery-item" tabindex="0">
+
+            <img src="https://images.unsplash.com/photo-1497445462247-4330a224fdb1?w=500&h=500&fit=crop" class="gallery-image" alt="">
+
+            <div class="gallery-item-info">
+
+              <ul>
+                <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 89</li>
+                <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 5</li>
+              </ul>
+
+            </div>
+
+          </div>
+
+          <div class="gallery-item" tabindex="0">
+
+            <img src="https://images.unsplash.com/photo-1426604966848-d7adac402bff?w=500&h=500&fit=crop" class="gallery-image" alt="">
+
+            <div class="gallery-item-type">
+
+              <span class="visually-hidden">Gallery</span><i class="fas fa-clone" aria-hidden="true"></i>
+
+            </div>
+
+            <div class="gallery-item-info">
+
+              <ul>
+                <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 42</li>
+                <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 1</li>
+              </ul>
+
+            </div>
+
+          </div>
+
+          <div class="gallery-item" tabindex="0">
+
+            <img src="https://images.unsplash.com/photo-1502630859934-b3b41d18206c?w=500&h=500&fit=crop" class="gallery-image" alt="">
+
+            <div class="gallery-item-type">
+
+              <span class="visually-hidden">Video</span><i class="fas fa-video" aria-hidden="true"></i>
+
+            </div>
+
+            <div class="gallery-item-info">
+
+              <ul>
+                <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 38</li>
+                <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 0</li>
+              </ul>
+
+            </div>
+
+          </div>
+
+          <div class="gallery-item" tabindex="0">
+
+            <img src="https://images.unsplash.com/photo-1498471731312-b6d2b8280c61?w=500&h=500&fit=crop" class="gallery-image" alt="">
+
+            <div class="gallery-item-type">
+
+              <span class="visually-hidden">Gallery</span><i class="fas fa-clone" aria-hidden="true"></i>
+
+            </div>
+
+            <div class="gallery-item-info">
+
+              <ul>
+                <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 47</li>
+                <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 1</li>
+              </ul>
+
+            </div>
+
+          </div>
+
+          <div class="gallery-item" tabindex="0">
+
+            <img src="https://images.unsplash.com/photo-1515023115689-589c33041d3c?w=500&h=500&fit=crop" class="gallery-image" alt="">
+
+            <div class="gallery-item-info">
+
+              <ul>
+                <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 94</li>
+                <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 3</li>
+              </ul>
+
+            </div>
+
+          </div>
+
+          <div class="gallery-item" tabindex="0">
+
+            <img src="https://images.unsplash.com/photo-1504214208698-ea1916a2195a?w=500&h=500&fit=crop" class="gallery-image" alt="">
+
+            <div class="gallery-item-type">
+
+              <span class="visually-hidden">Gallery</span><i class="fas fa-clone" aria-hidden="true"></i>
+
+            </div>
+
+            <div class="gallery-item-info">
+
+              <ul>
+                <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 52</li>
+                <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 4</li>
+              </ul>
+
+            </div>
+
+          </div>
+
+          <div class="gallery-item" tabindex="0">
+
+            <img src="https://images.unsplash.com/photo-1515814472071-4d632dbc5d4a?w=500&h=500&fit=crop" class="gallery-image" alt="">
+
+            <div class="gallery-item-info">
+
+              <ul>
+                <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 66</li>
+                <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 2</li>
+              </ul>
+
+            </div>
+
+          </div>
+
+          <div class="gallery-item" tabindex="0">
+
+            <img src="https://images.unsplash.com/photo-1511407397940-d57f68e81203?w=500&h=500&fit=crop" class="gallery-image" alt="">
+
+            <div class="gallery-item-type">
+
+              <span class="visually-hidden">Gallery</span><i class="fas fa-clone" aria-hidden="true"></i>
+
+            </div>
+
+            <div class="gallery-item-info">
+
+              <ul>
+                <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 45</li>
+                <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 0</li>
+              </ul>
+
+            </div>
+
+          </div>
+
+          <div class="gallery-item" tabindex="0">
+
+            <img src="https://images.unsplash.com/photo-1518481612222-68bbe828ecd1?w=500&h=500&fit=crop" class="gallery-image" alt="">
+
+            <div class="gallery-item-info">
+
+              <ul>
+                <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 34</li>
+                <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 1</li>
+              </ul>
+
+            </div>
+
+            <div class="gallery-item-info">
+
+              <ul>
+                <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 30</li>
+                <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 2</li>
+              </ul>
+
+            </div>
+
+          </div>
+
+        </div>
+        <!-- End of gallery -->
+
+        <div class="loader"></div>
+
+      </div>
+      <!-- End of container -->
+
+    </main>
+  </body>
+</html>
